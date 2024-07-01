@@ -26,6 +26,8 @@ app.use(express.json()); // Parse JSON request bodies
 app.use(cors()); // Enable CORS
 app.use(express.urlencoded({ extended: true })); // Parse URL-encoded request bodies
 
+
+
 // Set the port for the application
 app.set('port', process.env.PORT || 8000);
 
