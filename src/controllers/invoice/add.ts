@@ -74,7 +74,6 @@ const addInvoiceWrapper: RequestHandler = async (req, res) => {
 
   let createdInvoice = invoice.toJSON();
   createdInvoice = { ...createdInvoice, paymentDue: moment(createdInvoice.paymentDue).format('DD MMM YYYY') };
-
   res.status(201).json(createdInvoice);
 };
 
