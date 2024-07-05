@@ -10,6 +10,7 @@ if (result.error) {
 
 const mongoConnection = new MongoConnection(process.env.MONGO_URL);
 
+console.log("object")
 if (process.env.MONGO_URL == null) {
   logger.log({
     level: 'error',
@@ -25,6 +26,8 @@ if (process.env.MONGO_URL == null) {
       );
     });
   });
+
+
 
 // Close the Mongoose connection, when receiving SIGINT
 process.on('SIGINT', async () => {
