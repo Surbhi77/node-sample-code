@@ -31,7 +31,6 @@ if (process.env.MONGO_URL == null) {
   });
 
 
-console.log("object")
 // Close the Mongoose connection, when receiving SIGINT
 process.on('SIGINT', async () => {
   logger.info('Gracefully shutting down');
