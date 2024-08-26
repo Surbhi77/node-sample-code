@@ -12,7 +12,6 @@ const mongoConnection = new MongoConnection(process.env.MONGO_URL);
 
 console.log("object")
 console.log("object")
-console.log("object")
 
 
 
