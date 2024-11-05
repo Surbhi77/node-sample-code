@@ -11,6 +11,7 @@ if (result.error) {
 const mongoConnection = new MongoConnection(process.env.MONGO_URL);
 
 console.log("object")
+console.log("object")
 
 if (process.env.MONGO_URL == null) {
   logger.log({
